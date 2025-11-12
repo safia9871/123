@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عداد الاستغفار</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: #f0e6f6;
+    direction: rtl;
+  }
+  h1 {
+    color: #5a2d82;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  #counter {
+    font-size: 60px;
+    margin: 20px 0;
+    color: #333;
+  }
+  button {
+    font-size: 26px;
+    padding: 15px 40px;
+    background-color: #5a2d82;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #7a4db3;
+  }
+</style>
+</head>
+<body>
+  <h1>اضغط على الزر للاستغفار</h1>
+  <div id="counter">0</div>
+  <button onclick="increase()">استغفر الله</button>
+
+<script>
+  let count = 0;
+  function increase() {
+    count++;
+    document.getElementById('counter').innerText = count;
+  }
+</script>
+</body>
+</html>
